@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="./index.js" defer></script>
+  </head>
+  <body>
+    <!-- nav bar -->
+    <div class="nav-bar">
+      <ul>
+        <li><a href="#about-me">About me</a></li>
+        <li><a href="#projects-showcases">My projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="main-content">
+      <!-- hero section -->
+
+      <div class="hero" >
+      <div class="name slide" ><h1>Sam Lee</h1></div>
+        <div class="hero-intro slide" >
+          
+          Welcome! This is Sam here. Scroll down for more info about me ~
+          
+          <button class="download-resume-btn slide" >
+            <a href="./design/szabo-viktor-_h57ooIvgZ0-unsplash.jpg" download> Download resume</a>
+          </button>
+        
+        </div>
+      </div>
+     
+      <!-- intro -->
+      <div class="wrapper reveal" id="about-me">
+        <h1>About Me</h1>
+         <hr />
+        <div>
+          <!-- <img
+            src="./design/quinton-coetzee-xcweYgakbRo-unsplash.jpg"
+            alt="coding image here"
+            width="300px"
+          /> -->
+          <p>
+            I am a year-3 student studying Information system at HKUST. I have
+            discovered my passion in coding during my time in HKUST, especially
+            in web development. Therefore I am self-learning different web development technology such as HTML,CSS,Javascript and React. This website is created to record my
+            progress.
+            <h3 style="margin: 10px 0;"> You can check out my projects <a href="#projects-showcases"  ><div class="bold">Here</div></a>!</h3>
+          </p>
+        </div>
+      </div>
+     
+      <!-- showcases -->
+      <div class="wrapper" id="projects-showcases">
+        <h1>Projects showcases</h1>
+
+        <div class="project-showcase reveal">
+          <a><img src="" alt="" height="225px" width="225px" style="overflow: hidden;"/></a>
+          <div class="project-description">
+            <h3>Simple invoice app</h3>
+            <h4>Skillsets used:</h4>
+            <p class="description">
+                React,Html,Css
+
+            </p>
+          </div>
+        </div> 
+
+        <div class="project-showcase reveal">
+          <a><img src="" alt="" height="225px" width="225px" style="overflow: hidden;"/></a>
+          
+          <div class="project-description">
+            <h3>Simple note app</h3>
+            <h4>Skillsets used:</h4>
+            <p class="description">
+               Javascript,Html,Css
+
+            </p>
+          </div>
+
+        </div> 
+
+        <div class="project-showcase  reveal">
+          <a><img src="" alt="" height="225px" width="225px" style="overflow: hidden;"/></a>
+          
+          <div class="project-description">
+            <h3>Ecommerce clone</h3>
+            <h4>Skillsets used:</h4>
+            <p class="description">
+                Javascript,Html,Css
+
+            </p>
+          </div>
+        </div> 
+
+      </div>
+ <!-- footer -->
+    <footer id="contact">
+      <div class="footer-contact-info">
+        <div class="">
+          <p>Phone no: 64395423</p>
+          <p>Email address: leemingchun419@gmail.com</p>
+        </div>
+        <form>
+          <h3>
+          Contact me</h3>
+          <label for="your-fname"  >Your first name:</label>
+          <input type="text" id="your-fname">
+          <label for="your-lname"  >Your last name:</label>
+          <input type="text" id="your-lname">
+          <label for="your-email"  >Your email:</label>
+          <input type="text" id="your-email">
+          <label for="your-number"  >Your phone number (optional):</label>
+          <input type="text" id="your-number">
+          <input type="submit" value="submit">
+          </form>
+      </div>
+      <div class="copyright">2022 copyright &copy; Sam Lee</div>
+    </footer>
+
+    </div>
+
+   
+  </body>
+</html>
