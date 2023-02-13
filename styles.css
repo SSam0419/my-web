@@ -3,6 +3,7 @@
   margin: 0;
   scroll-behavior: smooth;
   font-family: "Roboto", sans-serif;
+  font-weight: 600;
 }
 
 html {
@@ -46,7 +47,7 @@ div.nav-bar {
 
 div ul {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   gap: 30px;
   padding: 20px;
   list-style: none;
@@ -87,20 +88,30 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  text-align: center;
   padding: 50px;
-  background-image: url("https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80");
+  /* background-image: url("https://images.unsplash.com/photo-1517483000871-1dbf64a6e1c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1769&q=80");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
+
+.type-effect-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.auto-type{ 
+}
+
 .name h1 {
   text-align: center;
   font-size: 4rem;
   margin-bottom: 10px;
 }
 .hero-intro {
+  text-align: center;
   max-width: 550px;
   font-size: 2rem;
 }
@@ -137,8 +148,7 @@ img {
 }
 
 #about-me div {
-  font-size: 1rem;
-  max-width: 450px;
+  font-size: 1rem; 
   padding: 20px;
 }
 
@@ -220,12 +230,16 @@ footer form input {
 }
 
 .reveal {
-  position: relative;
-  transform: translateY(150px);
+  position: relative; 
   opacity: 0;
-  transition: 2s all ease;
+  transition: 1s all ease;
 }
-.reveal.active {
-  transform: translateY(0);
+.reveal.active { 
   opacity: 1;
+}
+
+.about-me-introduction{
+  padding: 10px;
+  text-align: left; 
+  max-width: 100%;
 }

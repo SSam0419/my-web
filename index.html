@@ -25,36 +25,37 @@
       <!-- hero section -->
 
       <div class="hero" >
-      <div class="name slide" ><h1>Sam Lee</h1></div>
-        <div class="hero-intro slide" >
+        <div class="name" ><h1>Sam Lee</h1></div>
+          <div class="hero-intro" >
+
+            <div class="type-effect-container">
+              <div>Welcome! This is Sam here.</div> 
+              <div> I am a <span class="auto-type"></span></div>
+            </div>
+            
+            <!-- <button class="download-resume-btn slide" >
+              <a href="./design/cv.pdf" download> Download resume</a>
+            </button> -->
           
-          Welcome! This is Sam here. Scroll down for more info about me ~
-          
-          <button class="download-resume-btn slide" >
-            <a href="./design/cv.pdf" download> Download resume</a>
-          </button>
-        
-        </div>
+          </div>
       </div>
      
       <!-- intro -->
       <div class="wrapper reveal" id="about-me">
         <h1>About Me</h1>
-         <hr />
-        <div>
+         <hr /> 
           <!-- <img
             src="./design/quinton-coetzee-xcweYgakbRo-unsplash.jpg"
             alt="coding image here"
             width="300px"
           /> -->
-          <p>
-            I am a year-3 student studying Information system at HKUST. I have
-            discovered my passion in coding during my time in HKUST, especially
-            in web development. Therefore I am self-learning different web development technology such as HTML,CSS,Javascript and React. This website is created to record my
-            progress.
-            <h3 style="margin: 10px 0;"> You can check out my projects <a href="#projects-showcases"  ><div class="bold">Here</div></a>!</h3>
-          </p>
-        </div>
+          <div class="about-me-introduction">
+            <div>I am a year-3 student major in Information system at HKUST.</div> 
+            <div>I am always passionate in learning different new software development technologies. </div>
+            <div>Currently, I am self-learning web development such as HTML,CSS,Javascript and React.  </div> 
+             
+            <div style="margin: 10px 0;"> You can check out my projects <a href="#projects-showcases"  ><div class="bold">Here</div></a>!</div>
+            </div> 
       </div>
      
       <!-- showcases -->
@@ -127,6 +128,16 @@
 
     </div>
 
-   
+   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    var typed = new Typed(".auto-type",{
+      strings:["Programmer","Full Stack Web Developer"],
+      typeSpeed: 100,
+      backSpeed: 100, 
+      loop: true
+    })
+  </script>
+
   </body>
 </html>
