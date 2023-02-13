@@ -15,3 +15,13 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+const hamburger = document.querySelector(".hamburger");
+
+hamburger.onclick = function () { 
+  var navbar = document.querySelector(".nav-bar");
+  navbar.classList.toggle("active");
+  hamburger.classList.toggle("change");
+}
+ 

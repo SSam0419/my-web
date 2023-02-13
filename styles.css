@@ -8,7 +8,7 @@
 
 html {
   color: black;
-  height: 2000px;
+  height: 2000px; 
 }
 
 hr {
@@ -40,7 +40,7 @@ div.nav-bar {
   position: fixed;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  width: 100vw;
+  width: 100%;
   background-color: whitesmoke;
   z-index: 20;
 }
@@ -101,9 +101,7 @@ img {
   display: flex;
   flex-direction: column;
 }
-
-.auto-type{ 
-}
+ 
 
 .name h1 {
   text-align: center;
@@ -173,6 +171,8 @@ img {
   gap: 25px;
   align-items: center;
   justify-items: center;
+  margin: 20px;
+  padding: 100px;
 }
 
 #projects-showcases h1 {
@@ -242,4 +242,61 @@ footer form input {
   padding: 10px;
   text-align: left; 
   max-width: 100%;
+}
+
+.hamburger{
+  display: none;
+} 
+
+@media only screen and (max-width: 800px) {
+
+ 
+
+  div.nav-bar.active {  
+    height: 170px;  
+  }
+
+  div.nav-bar.active ul{  
+    display: flex;
+    flex-direction: column;
+  }
+
+  div.nav-bar ul{
+    display: none;
+  }
+
+  .hamburger{ 
+    display: inline-block;
+    outline: none;
+    border: none;
+    background: none;
+    font-size: 45px;
+    position: absolute;
+    right: 0;
+    margin: 10px;
+  } 
+
+  #projects-showcases {
+    display: flex; 
+    flex-direction: column; 
+} 
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+  
 }
